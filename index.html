@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grace Notes | A Christian Life Blog</title>
+  <style>
+    /* ==== RESET & BASE ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* ==== HEADER ==== */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h1 {
+      color: #6c63ff;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #6c63ff;
+    }
+
+    /* ==== HERO ==== */
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      background: linear-gradient(to bottom right, #ede9fe, #f3f4f6);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #4b5563;
+    }
+    .hero p {
+      margin-top: 0.5rem;
+      color: #6b7280;
+    }
+
+    /* ==== ABOUT ==== */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    #about img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    #about {
+      text-align: center;
+    }
+
+    /* ==== BLOG ==== */
+    #blog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .post-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .post-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+    .post-card h3 {
+      color: #6c63ff;
+      margin-bottom: 0.5rem;
+    }
+    .post-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* ==== CONTACT ==== */
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+      margin: auto;
+    }
+    #contact input, #contact textarea {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #contact button {
+      background: #6c63ff;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #contact button:hover {
+      background: #574bff;
+    }
+
+    /* ==== FOOTER ==== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #fff;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grace Notes</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Faith in every moment of life.</h2>
+    <p>Encouragement, reflections, and truth rooted in God’s Word.</p>
+  </section>
+
+  <section id="about">
+    <img src="https://via.placeholder.com/120" alt="Your photo" />
+    <h2>About Me</h2>
+    <p>Hello! I’m Erin, and this blog is where I share lessons from Scripture, personal reflections, and ways to walk in faith daily. My goal is to encourage others to see God’s presence in every part of life.</p>
+  </section>
+
+  <section id="blog">
+    <div class="post-card">
+      <h3>Finding Peace Through Prayer</h3>
+      <p>Discover how prayer can anchor your heart during life’s storms and bring you closer to God’s peace.</p>
+    </div>
+    <div class="post-card">
+      <h3>Walking by Faith, Not by Sight</h3>
+      <p>What does it mean to truly trust God when the path ahead is unclear?</p>
+    </div>
+    <div class="post-card">
+      <h3>Understanding God’s Timing</h3>
+      <p>Why delays can be divine direction — and how to wait with purpose.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Grace Notes | “Let all that you do be done in love.” — 1 Corinthians 16:14</p>
+  </footer>
+</body>
+</html>
+Initial commit
